@@ -1,0 +1,23 @@
+{
+  "name": "js-toolbelt",
+  "version": "0.0.1",
+  "authors": [
+    "Kai Weingärtner <kai.weingaertner@opitz-consulting.com>"
+  ],
+  "description": "Javascript Utilities",
+  "main": "js-toolbelt.js",
+  "keywords": [
+    "utils"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "underscore": "~1.7.0"
+  }
+}
