@@ -20,6 +20,7 @@ var bump = require('gulp-bump');
 var jshint = require('gulp-jshint');
 var stylish = require('jshint-stylish');
 var colours = require('colors');
+var watch = require('gulp-watch');
 var fs = require('fs');
 var exec = require('child_process').exec;
 var sys = require('sys');
@@ -71,7 +72,12 @@ gulp.task('bump-major', function(cb) {
     bumpHelper('major', cb);
 });
 
-gulp.task('test', ['lint', 'karma-tests']);
+gulp.task('test', ['lint', 'karma-tests', 'watch']);
+
+gulp.task('test-watch', function () {
+  gulp.watch('src/**/*.js', ['karma-tests']);
+  gulp.watch('test/**/*.js', ['karma-tests']);
+});
 
 /*
  * gulp helper tasks
