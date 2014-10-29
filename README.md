@@ -3,3 +3,6 @@ JS Toolkit [![Build Status](https://travis-ci.org/monbro/javascript-sdk-boilerpl
 
 Some Javascript utility functions
 
+Project Setup
+=============
+Run npm install && bower install in project root
